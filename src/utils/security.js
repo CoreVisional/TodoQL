@@ -40,10 +40,3 @@ export const generateJWT = (user) => {
         }
     );
 };
-
-export const setCookie = (res, token) => {
-    res.cookie("token", token, {
-        httpOnly: true,
-        sameSite: "lax",
-    });
-};
