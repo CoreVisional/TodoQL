@@ -1,4 +1,4 @@
-import { Note } from "../../models";
+import { Note } from "../../../database/models";
 
 const resolvers = {
     Query: {

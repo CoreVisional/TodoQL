@@ -1,4 +1,4 @@
-import { User } from "../../models";
+import { User } from "../../../database/models";
 import { hashPassword, authenticate, generateJWT } from "../../utils/security";
 import { GraphQLError } from "graphql";
 

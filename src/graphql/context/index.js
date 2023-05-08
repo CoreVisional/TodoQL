@@ -1,4 +1,4 @@
-import { User } from "../../models";
+import { User } from "../../../database/models";
 import jwt from "jsonwebtoken";
 import { secret } from "../../../config/jwt";
 
