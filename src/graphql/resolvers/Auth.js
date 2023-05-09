@@ -31,6 +31,11 @@ const resolvers = {
 
                 if (isPasswordValid) {
                     const token = generateJWT(user);
+                    const cookieOptions = {
+                        httpOnly: true,
+                    };
+
+                    res.cookie("jwt", token, cookieOptions);
                     return { ...user.toJSON(), token };
                 }
             }
